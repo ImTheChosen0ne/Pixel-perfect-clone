@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     font-family:  Helvetica, Arial, sans-serif;
     margin: 0;
 }
@@ -71,6 +71,7 @@ a.content-link {
     grid-template-areas:
     "advertise1"
     "advertise2"
+    "advertise3"
     "footer";
     gap: 10px;
 }
@@ -79,7 +80,7 @@ a.content-link {
     cursor: pointer;
     display: block;
     text-align: center;
-    background-color: rgb(255, 255, 213);
+    background-color: rgb(248, 248, 211);
     grid-area: advertise1;
 }
 h2 {
@@ -153,14 +154,42 @@ p {
     color: white;
 }
 
+.advertise3{
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    background-color: black;
+    grid-area: advertise3;
+    color: white;
+}
+
+#Seriestext > p {
+    font-size: 19px;
+    color: rgb(192, 7, 7);
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    font-weight: 200;
+}
+
+#ad-titleWatch {
+    padding-bottom: 0;
+    font-size: 45px;
+    letter-spacing: 1px;
+}
+.watchlogo {
+    padding-right: 5px;
+    height: 45px;
+}
+
 .footer{
-    margin: 50px 130px;
     grid-area: footer;
+    margin: 50px 130px;
     display: flex;
     text-align: left;
     background-color: white;
     border-top: 1px solid rgb(212, 206, 206);
-    justify-content:space-between;
+    justify-content: space-between;
+    /* width: max-content; */
 }
 
 ul {
@@ -187,4 +216,44 @@ li {
 
 .title {
     font-size: 12px;
+}
+
+.finePrinttop {
+    border-bottom: 1px solid lightgray;
+    display: block;
+    text-align: left;
+    margin: 0 130px;
+    font-size: 12px;
+    padding: 10px 0;
+    color: grey;
+
+}
+
+
+.finetext {
+    text-decoration: none;
+    color: grey;
+    border-right: 1px solid grey;
+    padding: 0 10px;
+}
+
+.finePrintbottom {
+    display: flex;
+    text-align: left;
+    margin: 0 130px;
+    font-size: 12px;
+    align-items: center;
+    color: grey;
+    margin-bottom: 30px;
+}
+
+#copyright {
+    padding-right: 20px;
+}
+
+.finetextmap{
+    border: none;
+    text-decoration: none;
+    color: grey;
+    padding: 0 10px;
 }
